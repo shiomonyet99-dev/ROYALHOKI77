@@ -1,15 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ROYALHOKI77 - Platform Game Online Terbesar SeAsia</title>
-
-<meta name="description" content="ROYALHOKI77 Platform Game Online Terbesar SeAsia Deposit Pulsa 5000">
-<meta name="keywords" content="royalhoki77, login royalhoki77, daftar royalhoki77">
+<title>ROYALHOKI77</title>
 
 <style>
 
@@ -17,107 +12,170 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial, sans-serif;
 }
 
 body{
-background: linear-gradient(270deg,#000,#081b29,#000);
-background-size:600% 600%;
-animation:bgmove 15s ease infinite;
+background:#000;
 color:white;
 text-align:center;
-}
-
-/* BACKGROUND ANIMATION */
-
-@keyframes bgmove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+overflow-x:hidden;
 }
 
 /* HEADER */
 
-.header{
-padding:40px 20px;
-border-bottom:1px solid #222;
+.hero{
+padding:90px 20px;
+background:linear-gradient(#02131c,#000);
 }
 
 .logo{
-width:220px;
-margin-bottom:20px;
+width:360px;
+max-width:90%;
+filter:drop-shadow(0 0 25px gold);
 }
 
-.tagline{
-font-size:34px;
-font-weight:bold;
+.title{
+font-size:50px;
 color:#00eaff;
-text-shadow:0 0 20px cyan;
-}
-
-.slogan{
-margin-top:10px;
-color:#ccc;
-font-size:18px;
-}
-
-/* PROMO */
-
-.promo{
-margin:40px auto;
-width:90%;
-max-width:750px;
-}
-
-.promo img{
-width:100%;
-border-radius:15px;
-box-shadow:0 0 30px #000;
-}
-
-/* BUTTONS */
-
-.buttons{
+font-weight:bold;
+text-shadow:0 0 25px #00eaff;
 margin-top:20px;
 }
 
+.subtitle{
+margin-top:10px;
+color:#ccc;
+font-size:20px;
+}
+
+/* BUTTON */
+
 .btn{
-display:block;
-margin:15px auto;
-padding:16px;
-width:85%;
-max-width:420px;
-text-decoration:none;
-font-size:18px;
+display:inline-block;
+margin:10px;
+padding:15px 35px;
+background:#00eaff;
+color:#000;
 font-weight:bold;
-border-radius:12px;
-color:white;
-background:linear-gradient(45deg,#00eaff,#0066ff);
+border-radius:8px;
+text-decoration:none;
 box-shadow:0 0 20px #00eaff;
-transition:0.3s;
+transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.08);
-box-shadow:0 0 35px #00eaff;
+transform:scale(1.1);
 }
 
-/* INFO */
+/* ONLINE */
 
-.info{
-margin-top:30px;
-color:#aaa;
-font-size:15px;
+.online{
+margin-top:20px;
+font-size:20px;
+color:#00ff7f;
 }
 
-/* FOOTER */
+/* JACKPOT */
 
-.footer{
-margin-top:50px;
-padding:20px;
+.jackpot{
+margin-top:15px;
+font-size:26px;
+color:gold;
+text-shadow:0 0 15px gold;
+}
+
+/* SLIDER */
+
+.slider{
+width:90%;
+max-width:650px;
+margin:40px auto;
+overflow:hidden;
+border-radius:10px;
+}
+
+.slides{
+display:flex;
+width:300%;
+animation:slide 15s infinite;
+}
+
+.slides img{
+width:100%;
+}
+
+@keyframes slide{
+
+0%{margin-left:0}
+30%{margin-left:0}
+
+35%{margin-left:-100%}
+65%{margin-left:-100%}
+
+70%{margin-left:-200%}
+100%{margin-left:-200%}
+
+}
+
+/* FLOAT BUTTON */
+
+.float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#00eaff;
+color:#000;
+padding:15px 25px;
+border-radius:40px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 20px #00eaff;
+}
+
+/* NOTIF */
+
+.notif{
+position:fixed;
+left:20px;
+bottom:20px;
+background:#111;
+padding:12px;
+border-radius:8px;
 font-size:14px;
-color:#666;
-border-top:1px solid #222;
+}
+
+/* COIN */
+
+.coin{
+position:fixed;
+top:-50px;
+font-size:24px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.title{
+font-size:32px;
+}
+
+.logo{
+width:240px;
+}
+
+.subtitle{
+font-size:16px;
+}
+
 }
 
 </style>
@@ -126,45 +184,128 @@ border-top:1px solid #222;
 
 <body>
 
-<div class="header">
+<header class="hero">
 
 <img src="https://i.imgur.com/sXTVzds.png" class="logo">
 
-<div class="tagline">
+<div class="title">
 Platform Game Online Terbesar SeAsia
 </div>
 
-<div class="slogan">
-ROYALHOKI77 ~ Link Login Situs Auto Sultan Paling Cuan Modal Deposit Pulsa 5000
+<div class="subtitle">
+ROYALHOKI77 ~ Situs Auto Sultan Modal Deposit Pulsa 5000
 </div>
 
-</div>
-
-<div class="promo">
-
-<img src="https://i.imgur.com/0WdweNC.png">
-
-</div>
-
-<div class="buttons">
-
-<a href="https://heylink.me/Royalhoki77link/" class="btn">LOGIN</a>
+<div>
 
 <a href="https://heylink.me/Royalhoki77link/" class="btn">DAFTAR</a>
-
-<a href="https://heylink.me/Royalhoki77link/" class="btn">LINK ALTERNATIF</a>
-
+<a href="https://heylink.me/Royalhoki77link/" class="btn">LOGIN</a>
 <a href="https://heylink.me/Royalhoki77link/" class="btn">LIVE CHAT</a>
 
 </div>
 
-<div class="info">
-Deposit Pulsa Mulai 5.000 • Server Stabil • Online 24 Jam
+<div class="online">
+Member Online : <span id="online"></span>
 </div>
 
-<div class="footer">
-© 2025 ROYALHOKI77
+<div class="jackpot">
+TOTAL JACKPOT : Rp <span id="jackpot"></span>
 </div>
+
+</header>
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="https://i.imgur.com/0WdweNC.png">
+<img src="https://i.imgur.com/HuiFGAZ.png">
+<img src="https://i.imgur.com/2hif2V3.png">
+
+</div>
+
+</div>
+
+<footer style="margin-top:40px;color:#777;padding:20px;">
+© 2026 ROYALHOKI77
+</footer>
+
+<a href="https://heylink.me/Royalhoki77link/" class="float">
+DAFTAR SEKARANG
+</a>
+
+<div class="notif" id="notif"></div>
+
+<script>
+
+/* ONLINE */
+
+function online(){
+document.getElementById("online").innerHTML =
+Math.floor(Math.random()*1500)+300;
+}
+
+setInterval(online,2000);
+online();
+
+/* JACKPOT */
+
+let jp=238912340;
+
+function jackpot(){
+
+jp += Math.floor(Math.random()*5000);
+
+document.getElementById("jackpot").innerHTML =
+jp.toLocaleString();
+
+}
+
+setInterval(jackpot,1500);
+jackpot();
+
+/* NOTIF */
+
+const nama=["Rian","Budi","Agus","Joko","Dimas","Rizky","Andi"];
+
+function notif(){
+
+let n = nama[Math.floor(Math.random()*nama.length)];
+
+let uang = Math.floor(Math.random()*9000000)+1000000;
+
+document.getElementById("notif").innerHTML =
+n+" menang Rp "+uang.toLocaleString();
+
+}
+
+setInterval(notif,4000);
+notif();
+
+/* COIN */
+
+function coin(){
+
+let c=document.createElement("div");
+
+c.className="coin";
+
+c.innerHTML="💰";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.animationDuration=(Math.random()*3+2)+"s";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{c.remove()},5000);
+
+}
+
+setInterval(coin,300);
+
+</script>
 
 </body>
 </html>
+```
