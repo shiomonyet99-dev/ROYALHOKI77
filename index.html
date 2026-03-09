@@ -12,58 +12,7 @@
 <meta name="keywords" content="royalhoki77, login royalhoki77, daftar royalhoki77">
 
 <style>
-.stats-box{
 
-margin-top:20px;
-
-padding:15px;
-
-background:linear-gradient(#02131c,#000);
-
-border-radius:10px;
-
-box-shadow:0 0 15px #000;
-
-}
-
-.member-online{
-
-color:#00ff7f;
-
-font-size:18px;
-
-margin-bottom:10px;
-
-text-shadow:0 0 10px #00ff7f;
-
-}
-
-.jackpot-box{
-
-color:gold;
-
-font-size:26px;
-
-font-weight:bold;
-
-text-shadow:
-0 0 10px gold,
-0 0 20px gold;
-
-}
-  
-<div class="stats-box">
-
-<div class="member-online">
-Member Online : <span id="online"></span>
-</div>
-
-<div class="jackpot-box">
-TOTAL JACKPOT : Rp <span id="jackpot"></span>
-</div>
-
-</div>
-  
 *{
 margin:0;
 padding:0;
@@ -216,35 +165,6 @@ Deposit Pulsa Mulai 5.000 • Server Stabil • Online 24 Jam
 <div class="footer">
 © 2025 ROYALHOKI77
 </div>
-<script>
 
-/* MEMBER ONLINE */
-
-function online(){
-document.getElementById("online").innerHTML =
-Math.floor(Math.random()*1200)+300;
-}
-
-setInterval(online,2000);
-online();
-
-/* JACKPOT */
-
-let jp = 239000000;
-
-function jackpot(){
-
-jp += Math.floor(Math.random()*4000);
-
-document.getElementById("jackpot").innerHTML =
-jp.toLocaleString();
-
-}
-
-setInterval(jackpot,1500);
-jackpot();
-
-</script>
-  
 </body>
 </html>
