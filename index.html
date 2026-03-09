@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ROYALHOKI77 - Platform Game Online Terbesar SeAsia</title>
+<title>RoyalHoki77 - Platform Game Online Terbesar SEASIA</title>
 
-<meta name="description" content="ROYALHOKI77 Platform Game Online Terbesar SeAsia Deposit Pulsa 5000">
-<meta name="keywords" content="royalhoki77, login royalhoki77, daftar royalhoki77">
+<meta name="description" content="RoyalHoki77 platform game online terbesar seasia dengan berbagai permainan populer dan layanan 24 jam.">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
 body{
-background: linear-gradient(270deg,#000,#081b29,#000);
-background-size:600% 600%;
-animation:bgmove 15s ease infinite;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0a0a0a;
 color:white;
 text-align:center;
 }
 
-/* BACKGROUND ANIMATION */
-
-@keyframes bgmove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-}
-
-/* HEADER */
-
-.header{
-padding:40px 20px;
-border-bottom:1px solid #222;
-}
-
 .logo{
+margin-top:20px;
+}
+
+.logo img{
 width:220px;
-margin-bottom:20px;
 }
 
 .tagline{
-font-size:34px;
+font-size:24px;
 font-weight:bold;
-color:#00eaff;
-text-shadow:0 0 20px cyan;
-}
-
-.slogan{
+color:#ffb300;
 margin-top:10px;
-color:#ccc;
-font-size:18px;
 }
 
-/* PROMO */
-
-.promo{
-margin:40px auto;
-width:90%;
-max-width:750px;
+.container{
+padding:20px;
 }
 
-.promo img{
+.hero img{
 width:100%;
-border-radius:15px;
-box-shadow:0 0 30px #000;
+max-width:520px;
+border-radius:12px;
+box-shadow:0 0 25px rgba(255,180,0,0.6);
 }
 
-/* BUTTONS */
+.counter{
+margin-top:10px;
+font-size:16px;
+color:#ffb300;
+}
 
-.buttons{
-margin-top:20px;
+.timer{
+margin-top:10px;
+font-size:18px;
+color:#00ff9d;
 }
 
 .btn{
 display:block;
 margin:15px auto;
 padding:16px;
-width:85%;
-max-width:420px;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
+width:270px;
 border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
 color:white;
-background:linear-gradient(45deg,#00eaff,#0066ff);
-box-shadow:0 0 20px #00eaff;
-transition:0.3s;
 }
 
-.btn:hover{
-transform:scale(1.08);
-box-shadow:0 0 35px #00eaff;
-}
+.btn-daftar{background:#28a745;}
+.btn-login{background:#007bff;}
+.btn-main{background:#ff5722;}
 
-/* INFO */
-
-.info{
+.feature{
 margin-top:30px;
-color:#aaa;
-font-size:15px;
+background:#111;
+padding:25px;
+border-radius:10px;
 }
 
-/* FOOTER */
+.feature h2{
+color:#ffb300;
+}
+
+.testimoni{
+margin-top:30px;
+background:#111;
+padding:25px;
+border-radius:10px;
+}
 
 .footer{
-margin-top:50px;
+margin-top:40px;
+font-size:12px;
+color:#aaa;
 padding:20px;
+}
+
+.sticky{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#ffb300;
+padding:16px;
+}
+
+.sticky a{
+color:black;
+font-weight:bold;
+text-decoration:none;
+font-size:18px;
+}
+
+.popup{
+position:fixed;
+bottom:80px;
+left:20px;
+background:#111;
+padding:12px 18px;
+border-radius:10px;
 font-size:14px;
-color:#666;
-border-top:1px solid #222;
+box-shadow:0 0 10px rgba(0,0,0,0.7);
+display:none;
 }
 
 </style>
@@ -126,45 +132,126 @@ border-top:1px solid #222;
 
 <body>
 
-<div class="header">
-
-<img src="https://i.imgur.com/sXTVzds.png" class="logo">
+<div class="logo">
+<img src="https://i.imgur.com/sXTVzds.png">
+</div>
 
 <div class="tagline">
-Platform Game Online Terbesar SeAsia
+PLATFORM GAME ONLINE TERBESAR SEASIA
 </div>
 
-<div class="slogan">
-ROYALHOKI77 ~ Link Login Situs Auto Sultan Paling Cuan Modal Deposit Pulsa 5000
+<div class="container">
+
+<div class="hero">
+<img src="https://i.imgur.com/5exdHyz.jpeg">
 </div>
 
+<div class="counter">
+Member Online: <span id="online">356</span>
 </div>
 
-<div class="promo">
+<div class="timer">
+Promo berakhir dalam: <span id="countdown">10:00</span>
+</div>
 
-<img src="https://i.imgur.com/0WdweNC.png">
+<a class="btn btn-daftar" href="https://heylink.me/Royalhoki77link/" target="_blank">
+DAFTAR SEKARANG
+</a>
+
+<a class="btn btn-login" href="https://heylink.me/Royalhoki77link/" target="_blank">
+LOGIN MEMBER
+</a>
+
+<a class="btn btn-main" href="https://heylink.me/Royalhoki77link/" target="_blank">
+MASUK KE PLATFORM
+</a>
+
+<div class="feature">
+
+<h2>Keunggulan Platform</h2>
+
+<p>✔ Minimal deposit rendah</p>
+<p>✔ Proses cepat</p>
+<p>✔ Server stabil</p>
+<p>✔ Banyak pilihan game</p>
+<p>✔ Support online 24 jam</p>
 
 </div>
 
-<div class="buttons">
+<div class="testimoni">
 
-<a href="https://heylink.me/Royalhoki77link/" class="btn">LOGIN</a>
+<h2>Testimoni Member</h2>
 
-<a href="https://heylink.me/Royalhoki77link/" class="btn">DAFTAR</a>
-
-<a href="https://heylink.me/Royalhoki77link/" class="btn">LINK ALTERNATIF</a>
-
-<a href="https://heylink.me/Royalhoki77link/" class="btn">LIVE CHAT</a>
+<p>"Platformnya stabil banget!"</p>
+<p>"Prosesnya cepat dan gampang."</p>
+<p>"Main kapan saja lancar."</p>
 
 </div>
 
-<div class="info">
-Deposit Pulsa Mulai 5.000 • Server Stabil • Online 24 Jam
 </div>
 
 <div class="footer">
-© 2025 ROYALHOKI77
+© 2026 RoyalHoki77
 </div>
+
+<div class="sticky">
+<a href="https://heylink.me/Royalhoki77link/" target="_blank">
+DAFTAR SEKARANG
+</a>
+</div>
+
+<div class="popup" id="popup"></div>
+
+<script>
+
+function updateOnline(){
+let num = 300 + Math.floor(Math.random()*200);
+document.getElementById("online").innerText = num;
+}
+setInterval(updateOnline,4000);
+
+let time = 600;
+
+function startTimer(){
+let minutes = Math.floor(time/60);
+let seconds = time%60;
+
+document.getElementById("countdown").innerText =
+minutes + ":" + (seconds<10?"0":"") + seconds;
+
+time--;
+
+if(time<0){
+time=600;
+}
+
+setTimeout(startTimer,1000);
+}
+
+startTimer();
+
+const names=["Budi","Rudi","Andi","Slamet","Dewi","Putra","Rina","Agus"];
+
+function showPopup(){
+
+let name = names[Math.floor(Math.random()*names.length)];
+let amount = (Math.floor(Math.random()*900)+100)+"K";
+
+let popup=document.getElementById("popup");
+
+popup.innerText=name+" berhasil withdraw "+amount;
+
+popup.style.display="block";
+
+setTimeout(()=>{
+popup.style.display="none";
+},3000);
+
+}
+
+setInterval(showPopup,6000);
+
+</script>
 
 </body>
 </html>
