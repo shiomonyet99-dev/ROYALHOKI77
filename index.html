@@ -25,6 +25,7 @@
   </script>
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
   
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -34,6 +35,27 @@
     
     .top-header { padding: 15px; background: linear-gradient(to bottom, #111, #000); border-bottom: 2px solid #00ffff; }
     .jp-prize { display: block; color: #00ffff; font-size: 28px; font-weight: 900; text-shadow: 0 0 10px #00ffff; letter-spacing: 1px; }
+
+    /* BAGIAN JACKPOT GERAK */
+.jackpot-container {
+  height: 45px; /* Sesuaikan tinggi satu baris angka */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.rolling-numbers {
+  display: block;
+  animation: naik-terus 5s infinite linear;
+}
+@keyframes naik-terus {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-45px); }
+  50% { transform: translateY(-90px); }
+  75% { transform: translateY(-135px); }
+  100% { transform: translateY(0); }
+}
     
     .logo-area { padding: 20px 0; }
     .banner-area { width: 100%; line-height: 0; border-top: 1px solid #222; border-bottom: 1px solid #222; }
@@ -74,7 +96,18 @@
 <div class="container">
   <div class="top-header">
     <small style="letter-spacing: 4px; color: #fff;">GRAND JACKPOT SULTAN</small>
-    <span class="jp-prize">Rp 8,000,000,000</span>
+    <span class="jp-prize">
+  <div class="jackpot-container">
+    Rp <span class="rolling-numbers">
+      8.125.440.350<br>
+      8.350.670.720<br>
+      8.575.890.110<br>
+      8.720.120.840<br>
+      8.995.840.400<br>
+      8.125.440.350
+    </span>
+  </div>
+</span>
   </div>
 
   <div class="logo-area">
