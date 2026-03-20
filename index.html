@@ -36,25 +36,35 @@
     .top-header { padding: 15px; background: linear-gradient(to bottom, #111, #000); border-bottom: 2px solid #00ffff; }
     .jp-prize { display: block; color: #00ffff; font-size: 28px; font-weight: 900; text-shadow: 0 0 10px #00ffff; letter-spacing: 1px; }
 
-    /* BAGIAN JACKPOT GERAK */
-.jackpot-container {
-  height: 45px; /* Sesuaikan tinggi satu baris angka */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
+    .jackpot-container {
+  display: inline-block;
+  color: #00ffff; /* Warna neon lo */
+  font-weight: 900;
 }
+
 .rolling-numbers {
-  display: block;
-  animation: naik-terus 5s infinite linear;
+  display: inline-grid;
+  height: 1.2em;
+  line-height: 1.2em;
+  overflow: hidden;
+  vertical-align: top;
 }
-@keyframes naik-terus {
-  0% { transform: translateY(0); }
-  25% { transform: translateY(-45px); }
-  50% { transform: translateY(-90px); }
-  75% { transform: translateY(-135px); }
-  100% { transform: translateY(0); }
+
+.rolling-numbers > span {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  animation: nambahTerus 4s steps(4) infinite; /* Angka ganti tiap detik */
+  opacity: 0;
+}
+
+.rolling-numbers > span:nth-child(1) { animation-delay: 0s; }
+.rolling-numbers > span:nth-child(2) { animation-delay: 1s; }
+.rolling-numbers > span:nth-child(3) { animation-delay: 2s; }
+.rolling-numbers > span:nth-child(4) { animation-delay: 3s; }
+
+@keyframes nambahTerus {
+  0%, 24% { opacity: 1; transform: translateY(0); }
+  25%, 100% { opacity: 0; transform: translateY(0); }
 }
     
     .logo-area { padding: 20px 0; }
@@ -98,14 +108,12 @@
     <small style="letter-spacing: 4px; color: #fff;">GRAND JACKPOT SULTAN</small>
     <span class="jp-prize">
   <div class="jackpot-container">
-    Rp <span class="rolling-numbers">
-      8.125.440.350<br>
-      8.350.670.720<br>
-      8.575.890.110<br>
-      8.720.120.840<br>
-      8.995.840.400<br>
-      8.125.440.350
-    </span>
+    Rp&nbsp;<div class="rolling-numbers">
+      <span>8.125.440.350</span>
+      <span>8.125.445.720</span>
+      <span>8.125.451.110</span>
+      <span>8.125.458.840</span>
+    </div>
   </div>
 </span>
   </div>
